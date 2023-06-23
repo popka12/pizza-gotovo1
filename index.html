@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wg
+ht@300&display=swap" rel="stylesheet">
+  <title>LikePizza</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="header-page.css">
+  <link rel="stylesheet" href="section-top.css">
+  <link rel="stylesheet" href="section-catalog.css">
+  <link rel="stylesheet" href="section-about.css">
+  <link rel="stylesheet" href="section-contacts.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<header class="header-page">
+  <div class="container header-page_container">
+    <div class="header-page_start">
+      <div class="logo">
+        <img class="logo img" src="img/common/logo.png" alt=""width="120"
+             height="100">
+      </div>
+    </div>
+    <div class="header-page_end">
+      <nav class="header-page_nav">
+        <ul class="header-page_ul">
+          <li class="header-page_li">
+            <a class="header-page_link" href="#" data-scroll-to="section-catalog"><span class="headerpage_text">піца</span></a>
+          </li>
+          <li class="header-page_li">
+            <a class="header-page_link" href="#" data-scroll-to="section-about"><span class="headerpage_text">про нас</span></a>
+          </li>
+          <li class="header-page_li">
+            <a class="header-page_link" href="#" data-scroll-to="section-contacts"><span class="headerpage_text">контакти</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="phone">
+        <a class="phone_item header-page_phone" href="tel +3809862211">+
+          (380) 986-22-11</a>
+      </div>
+      <div class="header-page_hamburger">
+        <button class="button-menu" type="button">
+ <span class="btn-menu_box">
+ <span class="btn-menu_inner"></span>
+ </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="section-top">
+  <div class="container section-top_container">
+    <p class="section-top_info">за італьйським рецептом</p>
+    <h1 class="section-top_title">Найкраща піца в Деражні</h1>
+    <div class="section-top_btn">
+      <button class="btn" type="button" data-scroll-to="section-catalog">Асортимент</button>
+    </div>
+  </div>
+</section>
+<section class="section-catalog">
+  <div class="container-second">
+    <header class="section__header">
+      <h2 class="section-catalog__title section-catalog__title--accent">Меню</h2>
+      <nav class="catalog-nav">
+        <ul class="catalog-nav__wrapper">
+          <li class="catalog-nav__item">
+            <button class="catalog-nav__btn is-active" type="button" data-filter="all">всі</button>
+          </li>
+          <li class="catalog-nav__item">
+            <button class="catalog-nav__btn" type="button" data-filter="meat">м'ясні</button>
+          </li>
+          <li class="catalog-nav__item">
+            <button class="catalog-nav__btn" type="button" data-filter="mushrooms">грибні</button>
+          </li>
+          <li class="catalog-nav__item">
+            <button class="catalog-nav__btn" type="button" data-filter="cheese">сирні</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="catalog">
+      <div class="catalog__item" data-category="meat">
+        <div class="product">
+          <img src="img/section-catalog/meat.png" alt=""class="product_img">
+          <div class="product__content">
+            <h3 class="product__title">М'ясна</h3>
+            <p class="product__description">Куряче філе, салямі, шинка,
+              моцарела, рукола, помідор, сирний соус, томатний соус</p>
+          </div>
+          <footer class="product__footer">
+            <div class="product__sizes">
+              <button class="product__size is-active" type="button">25cм</button>
+              <button class="product__size" type="button">30см</button>
+              <button class="product__size" type="button">35см</button>
+            </div>
+            <div class="product__bottom">
+              <div class="product__price">
+                <span class="product__price-value">125</span>
+                <span class="product__currency">&#8372</span>
+              </div>
+              <button class="btn product__btn" type="button" data-popup="popup-order">замовити</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item" data-category="cheese">
+        <div class="product">
+          <img src="img/section-catalog/margarita.png" alt=""class="product_img">
+          <div class="product__content">
+            <h3 class="product__title">Маргарита</h3>
+            <p class="product__description">Помідор, сир твердий, моцарела,
+              перець, базилік, орегано, томатний соус</p>
+          </div>
+          <footer class="product__footer">
+            <div class="product__sizes">
+              <button class="product__size is-active" type="button">25cм</button>
+              <button class="product__size" type="button">30см</button>
+              <button class="product__size" type="button">35см</button>
+            </div>
+            <div class="product__bottom">
+              <div class="product__price">
+                <span class="product__price-value">110</span>
+                <span class="product__currency">&#8372</span>
+              </div>
+              <button class="btn product__btn" type="button" data-popup="popup-order">замовити</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item" data-category="meat">
+        <div class="product">
+          <img src="img/section-catalog/paperoni.png" alt=""class="product_img">
+          <div class="product__content">
+            <h3 class="product__title">Пепероні</h3>
+            <p class="product__description">Салямі пепероні, шинка,
+              моцарела, помідор, цибуля, оливки, рукола, соус BBQ</p>
+          </div>
+          <footer class="product__footer">
+            <div class="product__sizes">
+              <button class="product__size is-active" type="button">25cм</button>
+              <button class="product__size" type="button">30см</button>
+              <button class="product__size" type="button">35см</button>
+            </div>
+            <div class="product__bottom">
+              <div class="product__price">
+                <span class="product__price-value">145</span>
+                <span class="product__currency">&#8372</span>
+              </div>
+              <button class="btn product__btn" type="button" data-popup="popup-order">замовити</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item" data-category="cheese">
+        <div class="product">
+          <img src="img/section-catalog/chease.png" alt=""class="product_img">
+          <div class="product__content">
+            <h3 class="product__title">Чотири сири</h3>
+            <p class="product__description">Моцарелла, пармезан, дор-блю,
+              чеддер, перець, сирний соус, томатний соус</p>
+          </div>
+          <footer class="product__footer">
+            <div class="product__sizes">
+              <button class="product__size is-active" type="button">25cм</button>
+              <button class="product__size" type="button">30см</button>
+              <button class="product__size" type="button">35см</button>
+            </div>
+            <div class="product__bottom">
+              <div class="product__price">
+                <span class="product__price-value">140</span>
+                <span class="product__currency">&#8372</span>
+              </div>
+              <button class="btn product__btn" type="button" data-popup="popup-order">замовити</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="catalog__item" data-category="mushrooms">
+        <div class="product">
+          <img src="img/section-catalog/italian.png" alt=""class="product_img">
+          <div class="product__content">
+            <h3 class="product__title">Італійська</h3>
+            <p class="product__description">Печериці, куряче філе, салямі,
+              оливки, цибуля, моцарела, помідор, томатний соус</p>
+          </div>
+          <footer class="product__footer">
+            <div class="product__sizes">
+              <button class="product__size is-active"
+                      type="button">25cм</button>
+              <button class="product__size" type="button">30см</button>
+              <button class="product__size" type="button">35см</button>
+            </div>
+            <div class="product__bottom">
+              <div class="product__price">
+                <span class="product__price-value">135</span>
+                <span class="product__currency">&#8372</span>
+              </div>
+              <button class="btn product__btn" type="button" data-popup="popup-order">замовити</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-about">
+  <img src="img/section-about/text.png" alt="" class="section-about__img">
+  <div class="container section-about__container">
+    <div class="section-about__content">
+      <h2 class="section-about__title">Про нас</h2>
+      <p class="section-about__text"> Привіт! Ми піцерія "ТаоМао" у
+        Деражні.Ми готуємо піцу за оригінальним італійським рецептом. Ми створили сайт
+        піцерії, щоб наші клієнти могли замовити піцу онлайн. Пропрацювавши з логістикою,
+        ми можемо гарантувати час доставки 40 хвилин від отримання замовлення, інакше ви
+        отримаєте піцу безкоштовно.Всі заявки будуть оброблятися в нашій автоматизованій
+        системі.Для початку ми можемо запропонувати нашим клієнтам вибрати з 5 варіантів:
+        Італійська, Пепероні, М'ясна, Маргарита і Чотири сири. У майбутньому ми будемо
+        розширювати асортимент. Клієнти можуть розрахуватися карткою на сайті або оплатити
+        готівкою кур'єру. Також у нас є дисконтні карти, ми маємо можливість вказати карту
+        автоматично врахувавши знижку клієнта. Ми готуємо піцу лише з свіжих продуктів.
+        Кожний день ми купуємо свіжі продукти, овочі, гриби і м'ясо. Гарного дня, та
+        приємного апетиту. З любов'ю мережа піцерія "ТаоМао"!
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section-contacts">
+  <div class="container section-contacts__container">
+    <header class="section-header">
+      <h2 class="section-contacts__title">Контакти</h2>
+    </header>
+    <div class="contacts">
+      <div class="contacts__start">
+        <div class="contacts__map"></div>
+      </div>
+      <div class="contacts__end">
+        <div class="contacts__item">
+          <h3 class="contacts__title">Адрес</h3>
+          <p class="contacts__text">м. Деражня, Подільська площа, 18</p>
+        </div>
+        <div class="contacts__item">
+          <h3 class="contacts__title">Телефон</h3>
+          <p class="contacts__text"><a class="contacts__phone"
+                                       href="tel:+3809862211">+ (380) 986-22-11</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .video-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 480px;
+    border: 1px solid black;
+  }
+</style>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/KoEQJuD2t6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<footer class="footer-page">
+  <div class="container">
+    <div class="footer-text">©LikePizza 2022</div>
+  </div>
+</footer>
+<div class="popup popup-menu" hidden="hidden">
+  <div class="popup_wrapper">
+    <div class="popup_inner">
+      <div class="popup_content popup_content--fluid popup_content--centered">
+        <button class="btn-close popup_btn-close"></button>
+        <nav class="mobile-menu popup_mobile-menu">
+          <ul class="mobile-menu_ul">
+            <li class="mobile-menu_li">
+              <a class="mobile-menu_link" href="#menu" data-scroll-to="section-catalog">ПІЦА</a>
+            </li>
+            <li class="mobile-menu_li">
+              <a class="mobile-menu_link" href="#about" data-scroll-to="section-about">ПРО НАС</a>
+            </li>
+            <li class="mobile-menu_li">
+              <a class="mobile-menu_link"
+                 href="#contacts" data-scroll-to="section-contacts">КОНТАКТИ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="phone popup_phone">
+          <a class="phone_item phone_item--accent"
+             href="tel:+3809862211">+ (380) 986-22-11</a>
+        </div>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link" target="_blank">
+              <svg class="socials__icon socials__icon--instagram"
+                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35">
+                <!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License -
+                https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
+                --><path class="socials__logo" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3
+114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-
+33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-
+194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12
+26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-
+2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1
+147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9
+0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-
+184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-
+132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-
+132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6
+7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" target="_blank">
+              <svg class="socials__icon socials__icon--facebook"
+                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="35" height="35"><!-
+                -! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License -
+                https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
+                --><path class="socials__logo" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78
+90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14
+0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11
+71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" target="_blank">
+              <svg class="socials__icon socials__icon--telegram"
+                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="35" height="35"><!-
+                -! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License -
+                https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
+                --><path class="socials__logo"
+                         d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967
+,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-
+10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-
+34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-
+61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-
+104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-
+15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-
+62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-
+.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.95
+2,176.66Z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup popup-order" hidden="hidden">
+  <div class="popup_wrapper">
+    <div class="popup_inner">
+      <div class="popup_content">
+        <button class="btn-close popup_btn-close"></button>
+        <h2 class="page-title popup_title">ЗАПОВНІТЬ ФОРМУ</h2>
+        <p class="popup_subtitle">Ми гарантуюємо час доставки 40 хвилин від
+          отримання завмовлення</p>
+        <div class="order">
+          <img class="order_img" src="img/section-catalog/chease.png"
+               alt="">
+          <h3 class="order_title"><span class="order-producttitle">ЧОТИРИ СИРА</span> <span class="order-product-price">140</span>&#8372</h3>
+          <p class="order_size">25 cм</p>
+          <form class="form">
+            <input class="order-info-title" type="hidden" name="піца">
+            <input class="order-info-price" type="hidden" name="ціна">
+            <input class="order-info-size" type="hidden" name="розмір">
+            <input class="form_input" type="text" name="ім'я"
+                   placeholder="Ім'я" required>
+            <input class="form_input" type="text" name="телефон"
+                   placeholder="Телефон" required>
+            <input class="form_input" type="text" name="адреса"
+                   placeholder="Адреса" required>
+            <select class="form_input" name="Оплата">
+              <option value="Оплата готівкою">Оплата
+                готівкою</option>
+              <option value="Оплата картою">Оплата картою</option>
+            </select>
+            <button class="btn form_btn"
+                    type="submit">ПІДТВЕРДИТИ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup popup-thanks" hidden="hidden">
+  <div class="popup_wrapper">
+    <div class="popup_inner">
+      <div class="popup_content">
+        <button class="btn-close popup_btn-close"></button>
+        <h2 class="page-title popup_title">Успішно підтверджено</h2>
+        <p class="popup_subtitle">Ми вже готуємо вашу піцу</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup popup-error" hidden="hidden">
+  <div class="popup_wrapper">
+    <div class="popup_inner">
+      <div class="popup_content">
+        <button class="btn-close popup_btn-close"></button>
+        <h2 class="page-title popup_title">Виникла помилка</h2>
+        <p class="popup_subtitle">Будь ласка, замовте за телефоном</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/myLib.js"></script>
+<script src="js/header.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/scrollTo.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
+

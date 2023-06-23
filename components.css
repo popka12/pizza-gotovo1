@@ -1,0 +1,227 @@
+.btn{
+    background: #ff5441;
+    color: #fff;
+    display: inline-block;
+    padding: 18px 20px;
+    width: 240px;
+    max-width: 100%;
+    border-radius: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .02em;
+    box-shadow: 0 0 38px 0 rgba(212,66,50,0.8);
+    transition: color .2s, background .2s, opacity .2s;
+}
+.btn:hover{
+    background: #ec4b38;
+}
+.btn:active{
+    opacity: 0.8;
+    transform: scale(.95);
+}
+.container{
+    padding: 0 20px;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.phone_item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid #fff;
+    padding: 8px 16px;
+    border-radius: 21px;
+    transition: color .2s, background .2s, opacity .2s;
+}
+.phone_item--accent{
+    border-color: #ffa650;
+    color: #ffa650;
+}
+.phone_item:hover{
+    color: #1f1f1f;
+    background: #fff;
+}
+.phone_item--accent:hover{
+    background: #ffa650;
+    color: #ffffff;
+}
+.phone_item:active{
+    opacity: 0.8;
+}
+.btn-menu{
+    background: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px;
+    border: 0;
+}
+.btn-menu_box{
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+.button-menu{
+    background: black;
+    border: black;
+}
+.btn-menu_inner::before,
+.btn-menu_inner::after,
+.btn-menu_inner{
+    background: #fff;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+}
+.btn-menu_inner{
+    display: block;
+    top: 50%;
+    position: relative;
+}
+.btn-menu_inner::before,
+.btn-menu_inner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+}
+.btn-menu_inner::before{
+    top: -10px;
+}
+.btn-menu_inner::after{
+    top: -10px;
+}
+.socials{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.socials__item{
+    margin-right: 7px;
+}
+.socials__link{
+    display: inline-block;
+}
+.socials__icon{
+    fill: #ffa650;
+    width: 35px;
+    height: 35px;
+    transition: .2s;
+}
+.socials__icon--instagram:hover{
+    fill: #E6359C;
+}
+.socials__icon--facebook:hover{
+    fill: #3B5998;
+}
+.socials__icon--telegram:hover{
+    fill: #00BFFF;
+}
+.btn-close{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transition: transform .2s, opacity .2s;
+}
+.btn-close:hover{
+    transform: scale(1.1);
+}
+.btn-close:active{
+    transform: scale(.9);
+    opacity: .8;
+}
+.btn-close::before, .btn-close::after{
+    content: '';
+    background: #d2d2d2;
+    height: 40px;
+    width: 3px;
+    position: absolute;
+    border: 10px;
+    top: 50%;
+}
+.btn-close::before{
+    transform: translateY(-50%) rotate(45deg);
+}
+.btn-close::after{
+    transform: translateY(-50%) rotate(-45deg);
+}
+.mobile-menu{
+    width: 100%;
+}
+.mobile-menu_ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mobile-menu_link{
+    text-decoration: none;
+    padding: 20px 0;
+    display: block;
+    font-family: 'Monserat', sans-serif;
+    font-size: 24px;
+    color: #1f1f1f;
+    font-weight: 900;
+    text-align: center;
+    transition: bacground .2s, color .2s, opacity .2s;
+}
+.mobile-menu_link:hover{
+    background: #ffa650;
+    color: #ffffff;
+}
+.mobile-menu_link:active{
+    opacity: .8;
+}
+.order{
+    max-width: 310px;
+    margin: 0 auto;
+}
+.order_img{
+    width: 250px;
+    display: block;
+    margin: 0 auto 10px;
+}
+.order_title{
+    font-family: 'Monserat', sans-serif;
+    margin: 0 0 5px;
+    text-align: center;
+    color: #1f1f1f;
+    font-weight: 900;
+}
+.order_size{
+    margin: 0 0 30px;
+    font-family: 'Monserat', sans-serif;
+    color: #a2a2a2;
+    font-weight: 900;
+    text-align: center;
+}
+.form_input{
+    display: block;
+    width: 100%;
+    padding: 20px 28px;
+    background: #f7f7f7;
+    border-radius: 30px;
+    margin-bottom: 8px;
+    border: 2px solid #1f1f1f;
+    outline: none;
+}
+.form_input:focus{
+    border-color: #ffa650;
+}
+.form_btn{
+    width: 100%;
+    padding: 22px 28px;
+    border-radius: 50px;
+}
